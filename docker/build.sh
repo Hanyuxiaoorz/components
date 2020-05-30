@@ -8,4 +8,4 @@ docker rmi IMAGE_NAME
 docker build -t IMAGE_NAME .
 
 # 启动 Image container
-docker run --name CONTAINER_NAME -p HOST_PORT:CONTAINER_PORT IMAGE_NAME
+docker run --name CONTAINER_NAME -p HOST_PORT:CONTAINER_PORT --restart=always IMAGE_NAME
