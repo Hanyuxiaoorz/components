@@ -1,6 +1,10 @@
 spring:
   profiles:
     active: @spring.profiles.active@
+  security:
+    user:
+      password: 'admin'
+      name: 'admin'
 
 management:
   endpoints:
@@ -8,4 +12,3 @@ management:
       exposure:
         include: '*'
       base-path: /actuator
-
