@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator
+
