@@ -1,0 +1,14 @@
+server:
+  port: 8000
+
+spring:
+  security:
+    user:
+      name: 'admin'
+      password: 'admin@13579'
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.107.103.108:9020
+  application:
+    name: spring-boot-admin-server
