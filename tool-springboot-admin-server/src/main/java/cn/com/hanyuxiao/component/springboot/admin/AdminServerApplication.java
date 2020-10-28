@@ -20,7 +20,12 @@ public class AdminServerApplication {
     public static class SecurityPermitAllConfig extends WebSecurityConfigurerAdapter {
         @Override
         protected void configure(HttpSecurity http) throws Exception {
-            http.authorizeRequests().anyRequest().permitAll()
+            http.authorizeRequests()
+                    .antMatchers("/assets/**").permitAll()
+                    .antMatchers("/actuator/**").permitAll()
+                    .antMatchers("/logout", "/login").permitAll()
+                    .anyRequest().authenticated()
+                    .and().formLogin().permitAll()
                     .and().csrf().disable();
         }
     }
