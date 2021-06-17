@@ -1,5 +1,7 @@
-IMAGE_NAME=xxx
-CONTAINER_NAME=xxx
+IMAGE_NAME=
+CONTAINER_NAME=
+HOST_PORT=
+CONTAINER_PORT=
 
 # 清理 Docker container
 docker rm -f $CONTAINER_NAME
@@ -11,4 +13,4 @@ docker rmi $IMAGE_NAME
 docker build -t $IMAGE_NAME .
 
 # 启动 Image container
-docker run --name $CONTAINER_NAME -p HOST_PORT:CONTAINER_PORT --restart=always -d IMAGE_NAME
+docker run --name $CONTAINER_NAME -p $HOST_PORT:$CONTAINER_PORT --restart=always -d $IMAGE_NAME
