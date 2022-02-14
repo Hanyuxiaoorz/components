@@ -40,7 +40,7 @@
         </dependency>
     </dependencies>
 
-    <!-- 这是 SpringBoot 打包的插件，如果没有这个插件，执行 java -jar 是就会找不到 main 类 -->
+    <!-- 这是 SpringBoot 打包的插件，如果没有这个插件，执行 java -jar 时就会找不到 main 类 -->
     <build>
         <plugins>
             <plugin>
