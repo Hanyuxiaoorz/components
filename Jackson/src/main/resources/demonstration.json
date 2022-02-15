@@ -1,0 +1,47 @@
+{
+  "_id": "620b152018f3a35ea50f07a7",
+  "fields": {
+    "index": 0,
+    "guid": "b4de99d9-afb8-4d51-b4c3-eae6fc9b616e",
+    "isActive": true,
+    "balance": "$3,108.33",
+    "picture": "http://placehold.it/32x32",
+    "age": 28,
+    "eyeColor": "blue",
+    "name": "Patel Graham",
+    "gender": "male",
+    "company": "EMOLTRA",
+    "email": "patelgraham@emoltra.com",
+    "phone": "+1 (805) 576-2409",
+    "address": "624 Centre Street, Kimmell, Mississippi, 2316",
+    "about": "Ad commodo occaecat incididunt elit id ut nulla consectetur labore occaecat anim occaecat. Aliquip id eu nostrud incididunt aute velit minim adipisicing fugiat. Quis commodo deserunt anim incididunt duis anim. Pariatur dolore labore anim culpa labore esse magna aute.\r\n",
+    "registered": "2021-12-24T08:51:31 -08:00",
+    "latitude": -66.070593,
+    "longitude": -96.473107
+  },
+  "tags": [
+    "sunt",
+    "aute",
+    "adipisicing",
+    "cillum",
+    "laboris",
+    "consectetur",
+    "aute"
+  ],
+  "friends": [
+    {
+      "id": 0,
+      "name": "Stanton Lawson"
+    },
+    {
+      "id": 1,
+      "name": "Leticia Potts"
+    },
+    {
+      "id": 2,
+      "name": "Willa Rios"
+    }
+  ],
+  "greeting": "Hello, Patel Graham! You have 5 unread messages.",
+  "favoriteFruit": "apple"
+}
