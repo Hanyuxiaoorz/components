@@ -7,16 +7,19 @@ import org.springframework.util.ResourceUtils;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Iterator;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * 演示的数据来自于 classpath:demonstration.json
  */
 public class ParseJsonSample {
 
+    /**
+     * ObjectMapper 是一个线程安全的类，可以在类当中进行实例，但要注意的是，不要轻易去改变它已经定好的配置
+     * 否在，一旦有一个线程改了配置则会影响到其它正在使用 ObjectMapper 读取数据的线程。
+     *
+     * 线程安全是否意味着在高并发的场景下会有锁的开销？
+     */
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     /**
